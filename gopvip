@@ -54,11 +54,11 @@ $ngay = date("d-m-Y");
  print $banner;
 
 
-for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+chay1(17);
 print $luc."Vượt Link Cũng Là 1 Hình Thức Donate$trang -_-\n";
-for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+chay1(17);
 print $luc."Link Lấy Key Free:$trang  https://link1s.com/AFJK\n";
-for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+chay1(20);
 for($j = 4;$j> 0;$j--){
   print $luc."Chuyển Hướng Đến Trang Lấy Key Sau: $do [$den $j$do ]";
   sleep(1);
@@ -90,24 +90,24 @@ usleep(500000);
 print $banner;
 
 
-for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
 
 
 
 
 
 
-print $trang."Bae!Bạn Là 1 Người Chạy Tool Free Chân Chính\n";
-for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+
+print $trang."\033[1;3;33mBae!Bạn Là 1 Người Chạy Tool Free Chân Chính\033[0m\n\n";
  print $luc."Tool Trao Đổi Sub\n";
- for($v=0;$v<= 5;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ chay1(8);
  print $luc."$trang 1_Tool Traodoisub Đa Token\n";
- for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $luc."$trang 2_Tool Traodoisub Đa Token\n\n";
+ 
  print $luc."Tool Tương Tác Chéo\n";
- for($v=0;$v<= 5;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
- print $luc."$trang 2_Tool Tuongtaccheo Đa Token\n";
- for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
- print $doandz."".$luc."Nhập Số: $trang";
+ chay1(8);
+ print $luc."$trang 3_Tool Tuongtaccheo Đa Token\n\n";
+ 
+ print $doandz."".$trang."=>".$luc."Nhập Số: $trang";
 $nhaptool2 = trim(fgets(STDIN));
 if ($nhaptool2 == '1'){
 	if(!$sock = @fsockopen('www.google.com', 80))
@@ -117,7 +117,10 @@ if ($nhaptool2 == '1'){
 }
 	eval(get('https://run.mocky.io/v3/6fffb5d0-4b05-4210-ad2b-38a1381bf84c'));
 	
-}else if ($nhaptool2 == '2'){
+	
+	}else if ($nhaptool2 == '2'){
+	eval(get('https://raw.githubusercontent.com/cranhh/cranh/main/cdtdstk'));
+}else if ($nhaptool2 == '3'){
 	eval(get('https://run.mocky.io/v3/e17d98ed-124a-453c-8e61-b66070b0e17f'));
 	
 	
@@ -153,4 +156,22 @@ function get($url){
     curl_close($ch);
     return $result;
 }
+function chay($t) {
+
+	$trang="\033[1;97m";
+
+	for ($x = 0; $x <= $t; $x++) {
+
+		echo $trang."= ";usleep(4000);
+
+		}echo"\n";}
+ function chay1($t) {
+
+	$trang="\033[1;97m";
+
+	for ($x = 0; $x <= $t; $x++) {
+
+		echo $trang."- ";usleep(4000);
+
+		}echo"\n";}
  
